@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Apex Engineering Institute</h1>
+  <p>Online Course Registration Portal</p>
+</header>
+
+<main>
+  <div id="course-list" class="grid"></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <form id="reg-form">
+        <input type="text" id="student-name" placeholder="Full Name" required>
+        <input type="text" id="student-id" placeholder="Roll Number (e.g. ENG2026)" required>
+        <input type="email" id="student-email" placeholder="College Email" required>
+        <button type="submit">Confirm Registration</button>
+      </form>
+    </div>
+  </div>
+
+  <section class="registered-box">
+    <h2>Registered Courses (<span id="reg-count">0</span>)</h2>
+    <ul id="reg-list"></ul>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
